@@ -9,7 +9,7 @@ items = [{"name": "Apple", "description": "A round fruit with red or green skin 
                                         "from chickens."},
          {"name": "Flower", "description": "A plant with brightly coloured petals and a sweet fragrance, often "
                                            "given as a gift."},
-         {"name": " Guitar", "description": "A musical instrument with six strings and a hallow body, used for "
+         {"name": "Guitar", "description": "A musical instrument with six strings and a hallow body, used for "
                                             "playing a variety of music."},
          {"name": "Hat", "description": "A head covering , protection from sun or rain, or as a fashion accessory."},
          {"name": "Ice cream", "description": "A sweet, creamy frozen dessert made from milk, cream, and sugar."},
@@ -44,11 +44,11 @@ items = [{"name": "Apple", "description": "A round fruit with red or green skin 
                                               "stuck with a mallet produce musical tones."}]
 with open("items.json", "w") as f:
     json.dump(items, f)
-    print(items)
+
 
 with open("items.json", "w") as write_file:
     json.dump(items, write_file, indent=4)
-    print(items)
+
 
 with open("items.json", "r") as f:
     items = json.load(f)
@@ -64,13 +64,29 @@ with open("items.json", "r") as f:
 scores = {}
 
 
+def write_json(player, scores):
+    with open("League_table.json", "r") as file:
+        League_table = json.load(file)
+        item = {"name": f"{player}", "score": scores}
+        League_table.append(item)
+    with open("League_table.json", "w") as file:
+        json.dump(League_table, file)
+
+
+def read_json():
+    with open("League_table.json", "r") as file:
+        League_table = json.load(file)
+        for item in League_table:
+            print(item["name"], end="\t")
+            print(item["score"])
+
+
 def main():
     print("Welcome to the guessing game!")
     print("1. View league table")
     print("2. New player")
     print("3. Existing player")
     choice = input("Please select an option: ")
-
 
     if choice == "1":
         view_league_table()
@@ -92,14 +108,17 @@ def view_league_table():
 
 def new_player():
     player_name = input("Please enter your player name: ")
+    print("Hello " + player_name)
     scores[player_name] = 0
     play_game(player_name)
 
 
 def existing_player():
     player_name = input("Please enter your player name: ")
+    print("Wellcome back " + player_name)
     if player_name in scores:
         play_game(player_name)
+
     else:
         print("Player not found. Please try again.")
         existing_player()
@@ -114,7 +133,7 @@ def play_game(player_name):
         description = item["description"]
         name = item["name"]
         tries = 3
-        while tries > 0:
+        while tries > 0 and scores[player_name] < 3:
             guess = input(f"What is the name of this item?\n{description}\n")
             if guess.lower() == name.lower():
                 print("Correct!")
@@ -127,9 +146,12 @@ def play_game(player_name):
                 else:
                     print("Game over.")
                     scores[player_name] = 0
+                    main()
 
-    print("Thanks for playing! Your score is", scores[player_name])
+    print("Thanks for playing! Your score is ", player_name, scores[player_name])
+    write_json(player_name, scores[player_name])
     main()
 
 
 main()
+print(scores)
