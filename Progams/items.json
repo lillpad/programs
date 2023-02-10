@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Apple",
+        "description": "A round fruit with red or green skin and white, juicy interior."
+    },
+    {
+        "name": "Banana",
+        "description": "A long, curves fruit with yellow or green skin and soft, sweet flesh."
+    },
+    {
+        "name": "Carrot",
+        "description": "A long, think, orange root vegetable with a crisp texture."
+    },
+    {
+        "name": "Dog",
+        "description": "A four-legged mammal with fur, wagging tail, and a friendly disposition."
+    },
+    {
+        "name": "Egg",
+        "description": "A oval shaped, white, or brown, oval shaped food item that comesfrom chickens."
+    },
+    {
+        "name": "Flower",
+        "description": "A plant with brightly coloured petals and a sweet fragrance, often given as a gift."
+    },
+    {
+        "name": " Guitar",
+        "description": "A musical instrument with six strings and a hallow body, used for playing a variety of music."
+    },
+    {
+        "name": "Hat",
+        "description": "A head covering , protection from sun or rain, or as a fashion accessory."
+    },
+    {
+        "name": "Ice cream",
+        "description": "A sweet, creamy frozen dessert made from milk, cream, and sugar."
+    },
+    {
+        "name": "Jacket",
+        "description": "A type of clothing worn on the upper body, typically made of a warm material."
+    },
+    {
+        "name": "Kangaroo",
+        "description": "A marsupial native to Australia, known for its powerful hind legs and tail used for hopping."
+    },
+    {
+        "name": "Lemon",
+        "description": "A small. round citrus fruit with sour, acidic taste and a bright, yellow skin."
+    },
+    {
+        "name": "Moon",
+        "description": "A natural satellite of the Earth, visible at night as bright, roundobject in the sky."
+    },
+    {
+        "name": "Newspaper",
+        "description": "A printed publication containing news, articles, and information,often distributed daily."
+    },
+    {
+        "name": "Ocean",
+        "description": "A vast body of salt water that covers more than 70% of the Earth's surface"
+    },
+    {
+        "name": "Pen",
+        "description": "A writing instrument with small, replaceable in cartridge, used for writingon paper."
+    },
+    {
+        "name": "Quilt",
+        "description": "A type of bedding made with two layers of fabric stitched together with padding in between."
+    },
+    {
+        "name": "Raccoon",
+        "description": "A mammal with a distinctive black and white face, know for its intelligence and adaptability."
+    },
+    {
+        "name": "Sunflower",
+        "description": "A tall, yellow-flowered plant with large, ray-like petals and a darkcentral disk."
+    },
+    {
+        "name": "Table",
+        "description": "A piece of furniture with a flat top and more than one legs, used forsupporting objects or holding things."
+    },
+    {
+        "name": "Umbrella",
+        "description": "A portable, collapsible canopy supported on a central pole, used forprotection from the rain or sun."
+    },
+    {
+        "name": "Violin",
+        "description": "A string musical instrument with four strings, held between the chin and shoulder and played with a bow."
+    },
+    {
+        "name": "Watch",
+        "description": "A small timepiece worn on the wrist or carried in a pocket, used forkeeping track of time"
+    },
+    {
+        "name": "Xylophone",
+        "description": "A musical instrument consisting of a set of wooden bars that arestuck with a mallet produce musical tones."
+    }
+]
